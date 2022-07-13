@@ -1,0 +1,59 @@
+spring:
+  config:
+    activate: 
+      on-profile: local
+      
+  application:
+    name: tid-hub-api
+    
+  messages:
+    basename: config/messages/message
+    encoding: UTF-8
+    
+  servlet:
+    multipart: 
+      max-file-size: 300MB
+      max-request-size: 300MB
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+        
+  datasource:
+    url: jdbc:mysql://10.40.89.24:3306/fido_db?autoReconnect=true&useUnicode=yes&useSSL=false&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: dbgw_write
+    password: Dbgw.22551!
+         
+server:
+  port: 80
+  servlet:
+    session:
+      timeout: 60
+  tomcat:
+    protocol_header: x-forwarded-proto
+    remote_ip_header: x-forwarded-for
+    use-relative-redirects: true
+
+korbit: 
+  url: https://api.korbit.co.kr
+  b2b:
+    url: https://api.korbit.co.kr
+    client-id: tid
+
+logging:
+  file:
+    path: /app/deploy/tid-hub-api/logs
+  level:
+    root: DEBUG
+    org.hibernate.type.descriptor.sql: trace
