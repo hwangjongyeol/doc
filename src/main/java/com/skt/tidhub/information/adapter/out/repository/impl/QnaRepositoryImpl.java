@@ -2,7 +2,7 @@ package com.skt.tidhub.information.adapter.out.repository.impl;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.stream.Collectors; 
+import java.util.stream.Collectors;
 
 import javax.persistence.EntityManager;
 
@@ -60,7 +60,7 @@ public class QnaRepositoryImpl implements QnaRepositoryCustom{
 		List<QnaEntity> list = queryFactory
 				.selectFrom(qnas)
 				.where(qnas.login_id.eq(loginId)
-						.and(qnas.rgstr_dtm.after(LocalDateTime.now().minusMonths(3))) //TODO 3개월 기준?
+						.and(qnas.rgstr_dtm.after(LocalDateTime.now().minusMonths(3))) //TODO 3媛쒖썡 湲곗�?
 						)
 				.offset(pageable.getOffset())
 				.limit(pageable.getPageSize())
