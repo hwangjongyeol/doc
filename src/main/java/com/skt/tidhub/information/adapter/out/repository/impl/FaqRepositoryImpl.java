@@ -1,7 +1,7 @@
 package com.skt.tidhub.information.adapter.out.repository.impl;
 
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.stream.Collectors; 
 
 import javax.persistence.EntityManager;
 
