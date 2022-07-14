@@ -12,12 +12,12 @@ import org.springframework.util.StringUtils;
 
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
-import com.skt.tidhub.board.entity.QFaqCttEntity;
-import com.skt.tidhub.board.entity.QFaqEntity;
 import com.skt.tidhub.information.adapter.in.entity.SearchFaqListEntity;
 import com.skt.tidhub.information.adapter.out.dto.FaqDetailDto;
 import com.skt.tidhub.information.adapter.out.dto.FaqListResultDto;
 import com.skt.tidhub.information.adapter.out.entity.FaqEntity;
+import com.skt.tidhub.information.adapter.out.entity.QFaqCttEntity;
+import com.skt.tidhub.information.adapter.out.entity.QFaqEntity;
 import com.skt.tidhub.information.adapter.out.repository.FaqRepositoryCustom;
 
 public class FaqRepositoryImpl implements FaqRepositoryCustom {

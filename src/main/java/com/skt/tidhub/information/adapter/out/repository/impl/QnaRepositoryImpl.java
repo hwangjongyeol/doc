@@ -11,10 +11,10 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
-import com.skt.tidhub.board.entity.QQnaEntity;
 import com.skt.tidhub.information.adapter.out.dto.QnaDetailDto;
 import com.skt.tidhub.information.adapter.out.dto.QnaResultDto;
 import com.skt.tidhub.information.adapter.out.dto.QnaStatusDto;
+import com.skt.tidhub.information.adapter.out.entity.QQnaEntity;
 import com.skt.tidhub.information.adapter.out.entity.QnaEntity;
 import com.skt.tidhub.information.adapter.out.repository.QnaRepositoryCustom;
 

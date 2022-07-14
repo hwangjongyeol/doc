@@ -6,10 +6,10 @@ import javax.persistence.EntityManager;
 
 import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.impl.JPAQueryFactory;
-import com.skt.tidhub.board.entity.QBannerEntitiy;
-import com.skt.tidhub.board.entity.QImageEntity;
 import com.skt.tidhub.information.adapter.in.entity.SearchBannerEntity;
 import com.skt.tidhub.information.adapter.out.dto.BannerResultDto;
+import com.skt.tidhub.information.adapter.out.entity.QBannerEntitiy;
+import com.skt.tidhub.information.adapter.out.entity.QImageEntity;
 import com.skt.tidhub.information.adapter.out.repository.BannerRepositoryCustom;
 
 public class BannerRepositoryImpl implements BannerRepositoryCustom{

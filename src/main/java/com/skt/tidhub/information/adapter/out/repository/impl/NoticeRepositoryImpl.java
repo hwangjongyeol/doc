@@ -11,10 +11,10 @@ import org.springframework.data.domain.Pageable;
 
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
-import com.skt.tidhub.board.entity.QNoticeEntity;
 import com.skt.tidhub.information.adapter.in.entity.SearchNoticeEntity;
 import com.skt.tidhub.information.adapter.out.dto.NoticeResultDto;
 import com.skt.tidhub.information.adapter.out.entity.NoticeEntity;
+import com.skt.tidhub.information.adapter.out.entity.QNoticeEntity;
 import com.skt.tidhub.information.adapter.out.repository.NoticeRepositoryCustom;
 
 public class NoticeRepositoryImpl implements NoticeRepositoryCustom {
